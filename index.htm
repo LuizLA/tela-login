@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <img src="https://www.grupobz.com.br/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-14-at-15.02.49-1024x574.jpeg" alt="">
+    
+    <form class="form-login">
+        <h1>Seja bem vindo</h1>
+        <input type="text">
+        <input type="text">
+        <div class="btn-group">
+            <button id="btn-entrar">Entrar</button>
+            <button id="btn1-cadastrar">Cadastrar</button>
+        </div>
+    </form>
+
+    <form class="form-cadastro">
+        <h1>Cadastra-se</h1>
+        <input type="text" placeholder="nome completo">
+        <input type="text" placeholder="e-mail">
+        <input type="text" placeholder="telefone">
+        <input type="password" placeholder="senha">
+        <input type="password" placeholder="confirmar senha">
+        
+        <div class="btn-group">
+            <button id="btn2-Cadastrar">Cadastrar</button>
+            <button id="btn-cancelar"> Cancelar </button>
+        </div>
+
+    </form>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+        }
+        .form-login{
+            height: 100vh;
+            width: 300px;
+            color: #fff;
+            gap: 20px;
+            display: flex;
+            padding: 20px;
+            padding-top: 100px;
+            align-items: center;
+            flex-direction: column;
+            background-color: #1d1d1d;
+        }
+        .form-login input, .form-cadastro input{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+        }
+        .form-login h1{
+            margin-bottom: 30px;
+        }
+        .form-login .btn-group, .form-cadastro .btn-group{
+            width: 100%;
+            gap: 10px;
+            display: flex;
+        }
+        .form-login button, .form-cadastro button{
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 7px;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: .9s;
+        }
+        .form-login button:hover, .form-cadastro button:hover{
+            color: #fff;
+            background-color: green;
+         transform: scale(1.1);
+        }
+        img{
+            width: 80%;
+        }
+
+
+        .form-cadastro{
+            top: 0;
+            right: 0;
+            position: absolute;
+
+            height: 100vh;
+            width: 300px;
+            color: #fff;
+            gap: 20px;
+            display: flex;
+            padding: 20px;
+            padding-top: 100px;
+            align-items: center;
+            flex-direction: column;
+            background-color: #1d1d1d;
+
+            display: none;
+        }
+    </style>
+
+    <script>
+        var btnCadastrar = document.querySelector('#btn1-cadastrar')
+        var formCadastro = document.querySelector('.form-cadastro')
+        var btnCancelar = document.querySelector('#btn-cancelar')
+        
+        btnCadastrar.onclick = (event) => {
+            event.preventDefault()
+            formCadastro.style.display = 'flex'
+        }cd
+            alert('cancelando')
+            location.reload()
+        }
+    </script>
+</body>
+</html>
